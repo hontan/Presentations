@@ -1,0 +1,259 @@
+1: [Title slide: AutoGUI] 
+•	HI, THANKS FOR COMING.
+•	THIS, PRESENTATION IS ABOUT
+	o	Writing programmes, that will AUTOMATICALLY DO STUFF
+	o	Directly on to your GRAPHICAL USER INTERFACE.
+
+•	So that is, to go on to, WHATEVER YOU HAVE OPEN IN WINDOWS,
+•	And control your MOUSE AND KEYBOARD,
+•	TO DO A SERIES OF TASKS.
+
+•	I believe this can be A VERY POWERFUL TOOL.
+•	repeating
+
+
+•	For example reports about Numbers of Young people on programmes,
+•	Or reports about the feedback they give us. Many many different reports like this.
+•	Thing is, These reports have Been built up Over time, by different people,
+•	And they have Grown a bit organically.
+•	And they’ve become a bit inefficient.
+•	The TrustStar project has been about bringing in 
+a completely new way of doing this.
+•	Improving the Process and improving the Performance.
+
+2: [Introduction slide]
+•	In this presentation, I’m going to talk about the Users.
+•	The different areas of The Prince’s Trust Involved in the TrustStar project.
+•	And then I’m going to talk about the solution, and break it down,
+•	looking at the suppliers, looking at the technology (Data warehouses and cubes). And then we’ll look at the actual Solution. Then we’ll look at how the users
+have benefited from it.
+•	I’ll give an overview of People at The Prince’s Trust
+who have been working on the project.
+•	And finally I’ll round-off with some bits and pieces, such as Where we are now, and What we are looking to Have in the future.
+ 
+3: [The business users] 
+•	So I’ll start by talking about the users, to get an idea of the 
+Demand for the TrustStar solution.
+•	There are two main parts to TrustStar, one for each of these 2 departments.
+•	What we call Phase1 – for the Evaluations team.
+•	And then there’s Phase2 – for the Finance team.
+
+4: [Evaluations (team at PSE) (~16 reports)]
+•	For the Evaluations team, we’re talking about a set of around 16 Groups of reports, which they compile, and send out to various people such as:
+SMT, 
+Country and regional directors,
+Programme delivery staff and managers,
+And fund raisers.
+
+5: [They use these reports for:]
+•	They use these reports as a measure for their performance, for example:
+o	The Counts of Young People starting different programmes. 
+o	Or they might use these reports to see if they are hitting their targets.
+o	Or they might use these reports to compare delivery 
+of projects against funding.
+So these are reports that contain very important information; that go out to people, who are making decisions, about running the business.
+
+6: [Finance (team at PSE) (2 reports)]
+•	For the Finance team, we have two main groups of reports, but it’s broken down in many different ways. And it’s given to a similar set of people: 
+o	SMT, 
+o	Country and regional directors, 
+o	But also here we have: Cost centre owners and finance staff at head office.
+
+7: [They use these reports to:]
+They use these reports to: 
+o	Review financial performance, 
+o	keep track of Accruals and Pre-payments (which are essentially about how we pay bills), 
+o	and they use these reports to help make a lot of financial decisions.
+Such as, Should we be spending more Here or less There.
+•	So Again, these are reports, that 
+o	go out to lots of very important people, 
+o	and they are used to make very important decisions,
+that Shape the business,
+o	and they are needed on a regular basis.
+
+8: [The Problem?]
+•	The problem for these users has been that producing these reports has 
+required a lot of manual work.
+•	So: Important information to important people, but difficult to produce.
+•	For example every month-end there’s a lot of processing to produce data out of TrustOnTrack into another Database called Eval, and then the Evaluations team use this to report on. And they do lots of re-linking, and copying and pasting, in Excel, and this takes days.
+•	So that’s Been the Problem.
+•	We will now, look at the suppliers, and the technology, and the TrustStar solution.
+ 
+9: [Suppliers]
+•	For phase 1, the Evaluations part, IMGroup started work on this in Sept 2009. And finished around July 2010.
+•	For phase 2, the Finance part, Accenture worked on this from the beginning of June 2009 to the end of August 2009.
+•	Which is funny because it meant phase 2 got started and finished before phase 1 began properly.
+
+•	The Pros and Cos of these two suppliers.
+
+•	Both big companies. 
+
+•	IMGroup did well when the project was put out to tender. And so we went with them, but later, as the business required more and more changes, they haven’t really responded very well. 
+•	They maybe have come from a more commercial angle into this project, and haven’t been so charitable to us.
+
+•	Accenture, on the other hand, spent Less time. 
+•	Their project was a lot smaller.
+•	And they gave their services to us for free
+•	Although they also got a lot out of it too, because they were a few guys who had a lot of experience in delivering BI projects, But using other technologies such as: Oracle - Business Objects – and Informatica, but not Microsoft products, 
+•	So for us, we got a product for free, and for them, they were able to skill-up on Microsoft SQL Server.
+•	So Accenture’s work on the project was more from a charity kind of angle.
+ 
+10: [Business Intelligence – the technology]
+•	The solution... is a BI solution.
+•	And we’ve often called this project The BI project. And that’s what it is in a way. But B – I, is more of a generic name for the technology (or type of solution).
+•	In BI, we use Databases that hold data Differently, to the way we usually hold it.
+•	Data for TrustOnTrack is held in a Relational schema.
+•	And data in TrustStar is held in a Star or Snowflake schema.
+
+11: [Diagram of relational database example] 
+•	This is what the data in a relational database (such as TrustOnTrack) looks like.
+•	You have different tables, which model objects you have in your business. 
+•	For example: Clients, Volunteers, and Sessions.
+•	These are all objects in your business, and they are all represented by different tables in TrustOnTrack. 
+•	And if there’s a relationship in the Trust, between these objects, then there’s a relationship between these tables. 
+•	That’s What Relational databases Are All About.
+
+12: [Diagram of star-schema and snow-flake-schema]
+•	In TrustStar, our business-intelligence solution, data is stored in a way that is optimized for reporting.
+•	The data is taken from TrustOnTrack and re-structured so that figures are stored centrally, 
+•	and the Meanings to those figures are linked around them.
+
+13: [How does this help?]
+•	How does this help?  It helps in two ways.
+
+•	Firstly, to do calculations against relational systems such as TrustOnTrack, you would typically have to go to lots of different tables to get the figures you want.
+•	But in a BI solution, it would be much faster Because you have your 
+figures all in one place.
+•	You’ve re-organised your data according to How you want to Report on it. As opposed to Modelling it against your Business.
+
+•	The second way it helps is this,
+•	Because we are designing our data structure from a reporting perspective, we have an idea Before-hand of the Aggregations we want,
+•	For example: Totals, Sub-totals, Averages. So we can Pre-generate them, and just Recall them When we Pull out the report. This makes the reporting Much Quicker.
+
+•	So this is an under-pinning theory of Business Intelligence solutions: Re-organising data so that the Numbers are stored Centrally, and the Meanings to those numbers are linked Around them.
+
+14: [Technical overview] Layers of the solution (both phases in parallel). [Diagram of solution layers]
+
+•	This is an overview of the solution. 
+We can understand the solution as a series of layers. And data flows from one layer to the next. Most of this is done in a process called the ETL. ELT stands for Extract Transform and Load.
+•	There are lots of intermediate steps here. But I’ve just summarised it as two arrows. But this is where Mike and I spend a lot of our time.
+
+•	So going from left to right: The solution has these things:
+•	Source databases, these are your operational databases, where your data originally comes from, in our case, TrustOnTrack and Sun-db.
+•	The ETL is an SQLServer programme, written using 
+SQL Server Integration Services. 
+•	It… 
+•	moves the data along, 
+•	and applies different logic to it, 
+•	and it Re-structures the data.
+•	The Data warehouse is where data is stored in the star or snowflake schema.
+•	The OLAP database (or cube):
+•	Is where you have more calculations, and business logic.
+•	And the data is held here in a – Multidimensional format. (I’ll talk more about that later)
+•	But this is done more Efficiently In The Cube, than in the data warehouse.
+
+•	Finally the Reports just look at the Cube. And the reports are put into SharePoint. SharePoint is like a nice Web-Front-End that holds the reports. And gives the users a nice interface to them.
+ 
+15: [Cube (Like a spreadsheet)]
+•	So to explain a bit more about The Cube.
+•	The Cube is sometimes known as an “On Line Analytical Programming Database”.
+•	It’s a type of database that is capable of holding data in lots of dimensions (or Axes).
+•	I like to think of it like this: It’s a bit like a spreadsheet.
+•	In a spreadsheet, You have two Axes. Along the top and down the side.
+•	And your data is in between.
+
+16: [Cube (More axes)]
+•	So if you imagine adding Another axis to this.
+•	It will come out of the page. Like this. In 3D.
+
+17: [Cube (Block of data)]
+•	And if you imagine the data that is held in between these Axes.
+•	It’s like a block of data.
+•	The cube is an extension of this idea.
+•	It can Use Lots And Lots of these Axes. And hold data in between them.
+
+•	And Holding data, in this Format, is very efficient for reporting.
+•	And so the reports Just Get their data from this Cube.
+ 
+18: [Evaluations Reports screenshot]
+•	This is what the front page of the Evaluations Reports look like.
+•	You have previews of what the reports look like.
+•	You click into these, and you get the actual reports.
+•	There are about 16 groups of reports
+•	They are mostly broken down by parameters, For Example: 
+programmes, or regions, etc.
+
+19: [Finance Reports screenshot]
+•	And for the Finance reports. There are two main reports,
+•	And They are Also broken down in multiple ways.
+ 
+20: [How this has benefited users - Evaluations]
+•	How this has benefited users. 
+•	The TrustStar reports are now more up to date than reports before, 
+•	They take less time to produce. 
+•	Data is more accurate than before, having Reduced the potential 
+for human error. 
+•	The old process used to take about 7 days. But TrustStar would be more or less Instant.
+•	These reports are more ‘user-friendly’, 
+•	Not being these huge Excel files. 
+•	And the ‘look and feel’ is much better in the Sharepoint portal.
+•	It’s taken away a lot of the labour intensive manual work that Justin used to do, A lot of boring copying and pasting in spreadsheets
+•	There’s still work to do, but in the future, the Evaluations team would like to use TrustStar to produce all their monthly reports, By just running them from Sharepoint, and sending them.
+•	And later they would like to give selected staff direct access to the Sharepoint portal, so they just go and pick up the reports themselves.
+ 
+21: [How this has benefited users - Finance]
+•	For Finance: Also, the improvements have been:
+Less Excel spreadsheets going around.
+•	An improvement on performance to reports done in Vision.
+•	Re-running reports used to take about 30 minutes, now they might 
+take just one minute.
+•	And similarly, in the future, the ability to develop more reports.
+ 
+22: [Costs]:
+•	The Costs? :
+
+•	Initially, phase I & II, were projected at a maximum, to be £148,734.
+•	This included charges for developing Phase I and II, and 
+hardware and software licenses.
+
+•	So far we’ve spent £95,607 on Phase 1.
+•	And phase 2 was done for free by Accenture.
+
+•	And a lot of cost has been saved by doing a lot of in-house development.
+
+23: [Who’s been doing what at PT?] 
+•	And this Is the work we’ve been doing.
+•	Marina and John have been doing the project management. Working with users on the design, managing changes and issues.
+•	Mike and I, have been doing some techy stuff.
+Fixing bugs, and doing change requests.
+•	Matt and Mel have built the servers. And Mel has done a lot of work on SharePoint.
+•	Richard Chadwick, Charlotte and Justin in Evaluations are like our main clients 
+for phase 1. So they’ve worked closely with the suppliers (IMGroup), on
+the design of the solution.
+•	Similarly Craig and Kamal worked with Accenture to get what Finance wanted. Craig also did a lot of work on the reports, both making changes and creating new ones.
+
+24: [Project timings]
+•	Project timings. Since October 2010, the phase 2 reporting has all come from TrustStar, as opposed to the old system.
+•	And there are only a small number of reports still running from the
+old system in phase 1.
+
+•	Users are always coming to us with new requirements for the reporting. 
+But this is Very normal in a BI system.
+Cos, it’s a system that’s changing All the time - As the business changes.
+And it’s a System that helps to Create Changes in the Business.
+•	In the future: BI should be something that gives us a Platform for building 
+even more reports.
+•	And in the future, we’re getting new phases, with other departments.
+
+25: [Summary:]
+•	So in summary,
+We’ve had a look at the users,
+•	the TrustStar database design structure, and how it differs from a traditional relational database. 
+•	We’ve looked at the Project Phases: Phase1 for Evaluations, Phase 2 for Finance. And the improvements made. The benefits of the solution. 
+•	We’ve had a look at the solution in its entirety, and we’ve looked at Costs, and Timings, and the People at the Prince’s Trust who have been involved.
+
+26: [Any questions?]
+•	So, that’s the end of the presentation.
+•	Thank you,
+•	and Any Questions please?
+
