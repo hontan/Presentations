@@ -1,0 +1,17 @@
+HI, THIS PRESENTATION IS ABOUT,
+The three parts of working with data, THAT INTEREST ME, THE MOST.
+
+First of all, data entry.
+The first point at which information enters a system from the outside world.
+Be if from a business, or any kind of study, like for example the weather or traffic.
+
+Then I'm really interested in the many different ways this data is stored.
+In what we call, database systems.
+We have relational database systems, NoSQL databases, etcetera.
+
+And finally, I'm very interested in how data analysed.
+Business Intelligence, Analytics, Machine Learning, Predictive Analytics,
+Are all very exciting areas of IT, that are continually growing.
+
+You can make a whole career out of any one of these areas.
+I indeed have, mostly with the middle layer.
